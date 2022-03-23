@@ -27,12 +27,13 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+// using viewbinding to display Text and make button display toastmessage and snackbar at same time.
 
         binding.TAndS
         binding.button01.setOnClickListener { SnackBar();Toast.makeText(this,"Let mine People go",Toast.LENGTH_SHORT).show() }
 
     }
-
+// create a method to create snackBar function.
     fun SnackBar() {
         val Button01 = binding.button01
         return make(Button01, "Snack Snack Bar", LENGTH_LONG).show()
